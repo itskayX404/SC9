@@ -534,18 +534,21 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
   goblok = fs.readFileSync('./video/ga.jpg')
-                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+                xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
+
 │⭔ 1 Minggu :10k
 │⭔ 1 Bulan :15k
 │⭔ Permanen :20k
 └───────⭓
-┌──⭓ *Jadi Bot*
-│⭔ Jasa Jadi Bot: 30k
-│⭔ Jadi Owner AzzBot: 15k
+┌──⭓ *Jadi Bot*
+
+│⭔ Jasa Jadi Bot: -
+│⭔ Jadi Owner : -
 └───────⭓
-┌──⭓ *Harga Sc Bot Wa*
-│⭔ Versi 1 :20k
-│⭔ Versi 2 :25k
+┌──⭓ *Harga Sc Bot Wa*
+
+│⭔ Versi 1 :-
+│⭔ Versi 2 :-
 │⭔ Free :Di Yt MBY•OFFICIAL
 └───────⭓` }, { quoted: m })
             }
@@ -1642,11 +1645,11 @@ break
                     image: { url: anu.thumbnail },
                     caption: `
 ⭔ *Title* : Tutor Buat Bot Seperti Di Gc 🗿
-⭔ *No Wa*: 081511480762
+⭔ *No Wa*: 082180026483
 ⭔ *Duration* : 24Hours
 ⭔ *Viewers* : 14M views
 ⭔ *Upload* At : 1 years ago
-⭔ *Author* : MBY•OFFICIAL 
+⭔ *Author* : MBY•OFFICIAL ©
 ⭔ *Channel* : ${anu.author.url}
 ⭔ *Description* : Gak Subrek Bot Mati!
 ⭔ *Url* : ${anu.url}`,
@@ -2945,9 +2948,7 @@ Siap Melayani Anda
 Ketik (.menu) Untuk Mengakses
 Mau Script? Bisa Chat Owner
 Thanks Sudah Menggunakan
-AzzBot-MD Jangan Lupa Subscribe
-Chanel : https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g
-Nih Musik Buat Menghibur
+Havy-Bot Jangan Lupa Subscribe
 ───────⭓`
             let btn = [{
                                 
@@ -2978,8 +2979,8 @@ break
  case 'allmenu': {
                 anu = `
 
-┌──⭓ *𝘈𝘻𝘻𝘉𝘰𝘵•𝘔𝘋*
-│⭔ 𝘖𝘸𝘯𝘦𝘳:𝗬𝗮𝗵𝘆𝗮 
+┌──⭓ *Havy-Bot*
+│⭔ 𝘖𝘸𝘯𝘦𝘳:Kay
 │⭔ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: 4.0
 │⭔ 𝘙𝘶𝘯𝘝𝘪𝘢:𝘏𝘦𝘳𝘰𝘬𝘶
 └───────⭓
