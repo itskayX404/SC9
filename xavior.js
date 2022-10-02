@@ -557,7 +557,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 
 xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g`},{ quoted: m })} break
 
-case 'runtime': { m.reply('${kyun(uptime)}')}
+case 'runtime': { m.reply('5 days, 4 hours, 23 minute')}
           break
    
             case 'noenc': {
