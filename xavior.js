@@ -557,10 +557,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 
 xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g`},{ quoted: m })} break
 
-case 'runtime':
-runtime = process.uptime()
-reply(`Runtime : ${waktu(runtime)}`)
-break
+case 'runtime': { m.reply('${kyun(uptime)}')}
+          break
    
             case 'noenc': {
             ana = fs.readFileSync('./sc/XaviorV2.zip')
