@@ -1646,12 +1646,6 @@ break
                     caption: `
 ⭔ *Title* : Tutor Buat Bot Seperti Di Gc 🗿
 ⭔ *No Wa*: 082180026483
-⭔ *Duration* : 24Hours
-⭔ *Viewers* : 14M views
-⭔ *Upload* At : 1 years ago
-⭔ *Author* : MBY•OFFICIAL ©
-⭔ *Channel* : ${anu.author.url}
-⭔ *Description* : Gak Subrek Bot Mati!
 ⭔ *Url* : ${anu.url}`,
                     footer: global.author,
                     buttons: buttons,
@@ -2616,9 +2610,11 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             break
             case 'ping': case 'botstatus': case 'statusbot': { m.reply(`             
 📱Info Server
-*Device:* Sony Xperia XZ3
-*RAM:* 8/128 GB
-*Chipset:* Snapdragon 865`)
+* Divace : -
+* Runtime : ${kyun(uptime)}
+* Hostname : heroku
+* Mode : ${publik ? 'public' : 'self'}
+* SC : recode by kay')
             }
             break
             case 'speedtest': {
