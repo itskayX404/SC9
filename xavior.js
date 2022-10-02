@@ -2610,8 +2610,9 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             break
             case 'ping': case 'botstatus': case 'statusbot': { m.reply(`             
 📱Info Server
-
-Havy`)
+*Device:* Sony Xperia XZ3
+*RAM:* 8/128 GB
+*Chipset:* Snapdragon 865`)
             }
             break
             case 'speedtest': {
