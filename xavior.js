@@ -2610,11 +2610,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
             break
             case 'ping': case 'botstatus': case 'statusbot': { m.reply(`             
 📱Info Server
-* Divace : -
-* Runtime : ${kyun(uptime)}
-* Hostname : heroku
-* Mode : ${publik ? 'public' : 'self'}
-* SC : recode by kay')
+
+Havy')
             }
             break
             case 'speedtest': {
