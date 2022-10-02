@@ -557,8 +557,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 
 xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g`},{ quoted: m })} break
 
-case 'runtime': { m.reply('4 days, 9 hours, 26 minutes')}
-          break
+case 'runtime':
+runtime = process.uptime()
+reply(`Runtime : ${waktu(runtime)}`)
+break
    
             case 'noenc': {
             ana = fs.readFileSync('./sc/XaviorV2.zip')
@@ -868,10 +870,10 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
                  break
                  case 'namafotobot': {
                if (!isCreator) throw mess.owner
-               if (!text) throw `Contoh : ${prefix + command} XaviorBot`
+               if (!text) throw `Contoh : ${prefix + command} havybot`
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
-          m.reply(`Awokawowk Lu Bukan Owner Asli Gua bre\n\nOwner Asli Gua *Xavior-Ofc* bre...\n\nMastah Kok Sc gratisan ✰➪\n\nBeli Bre Biar Fiturnya Berjalan`)
+          m.reply(`Awokawowk Lu Bukan Owner Asli Gua bre\n\nOwner Asli Gua *Itsmekay* bre...\n\nMastah Kok Sc gratisan ✰➪\n\nBeli Bre Biar Fiturnya Berjalan`)
             }
             break
             case 'namafotobot|subscribe': {
