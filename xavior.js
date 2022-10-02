@@ -1173,6 +1173,14 @@ break
                 }
              }
              break
+             case 'groupsetting': case 'groupss': {
+if (!isGroup) return reply('Fitur Ini Hanya Dapat Digunakan Di Dalam Group!')
+if (!isGroupAdmins) return reply('Fitur Ini Hanya Dapat Digunakan Oleh Admin!')
+if (!isBotGroupAdmins) return reply('Fitur Ini Hanya Dapat Digunakan Setelah Nomor Ini Menjadi Admin!')
+if (args.length < 1) return sendButMessage(from, `silahkan pilih opsi berikut`, '', [{ buttonId: `groupsetting open`, buttonText: { displayText: "OPEN" }, type: 1},{ buttonId: `groupsetting close`, buttonText: { displayText: "CLOSE" }, type: 1}], {quoted:msg})
+if (dn === 'open'){ await xavior.groupSettingUpdate(from, 'not_announcement')
+} else if (dn === 'close'){ await xavior.groupSettingUpdate(from, 'announcement')} else { reply('Error')}
+break
              case 'mute': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
