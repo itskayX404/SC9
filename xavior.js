@@ -784,6 +784,30 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
                 await xavior.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
+            case 'resetlinkgc':
+         case 'resetlinkgroup':
+         case 'revoke':
+         if (!isGroup) return reply(mess.only.group)
+         if (!isGroupAdmins) return reply(mess.only.admin)
+                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+          json = ['action', 'inviteReset', from]
+         xavior.query({json, expect200: true})
+          reply('Sukses Mereset Link Group')
+         break 
+         case 'opengc':
+         if (!isGroup) return reply(mess.only.group)
+         if (!isGroupAdmins) return reply(mess.only.admin)
+         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+         reply(`Sukses membuka grup ${groupName}`)
+	 xavior.groupSettingChange(from, GroupSettingChange.messageSend, false)
+	 break
+	 case 'closegc':
+	 if (!isGroup) return reply(mess.only.group)
+	 if (!isGroupAdmins) return reply(mess.only.admin)
+         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+	 reply(`Sukses menutup grup ${groupName}`)
+	 xavior.groupSettingChange(from, GroupSettingChange.messageSend, true)
+	 break
             case 'leave': {
                 if (!isCreator) throw mess.owner
                 await xavior.groupLeave(m.chat).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
