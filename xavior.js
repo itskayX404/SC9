@@ -539,24 +539,9 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 │⭔ 1 Minggu :10k
 │⭔ 1 Bulan :15k
 │⭔ Permanen :20k
-└───────⭓
-┌──⭓ *Jadi Bot*
-
-│⭔ Jasa Jadi Bot: 30k
-│⭔ Jadi Owner AzzBot: 15k
-└───────⭓
-┌──⭓ *Harga Sc Bot Wa*
-
-│⭔ Versi 1 :20k
-│⭔ Versi 2 :25k
-│⭔ Free :Di Yt MBY•OFFICIAL
 └───────⭓` }, { quoted: m })
             }
-            case 'subscribe':{
-            smeme = fs.readFileSync('./video/bro.mp4')
-
-xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `subrek.mp4`, caption: `Betewe Lu Dah Janji Mau Subscribe\n\nJangan PHP Yah 😊\n\nSubscibe:https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g`},{ quoted: m })} break
-
+          
 case 'runtime': { m.reply('4 days, 9 hours, 26 minutes')}
           break
    
@@ -584,11 +569,6 @@ xavior.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {q
 xavior.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {quoted:m})}
 break       
 
-case 'p': {
-smeme = fs.readFileSync('./video/intro.mp4')
-
-xavior.sendMessage(m.chat, { video: smeme, mimetype: 'video/mp4', fileName: `Intro.mp4` }, { quoted: m })} break
-          
             case 'chat': {
                 if (!isCreator) throw mess.owner
                 if (!q) throw 'Option : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete'
