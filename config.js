@@ -32,7 +32,7 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 5
+    free: 10
 }
 global.thumb = fs.readFileSync('./lib/xavi.jpg')
 global.tutor = fs.readFileSync('./video/intro.mp4')
