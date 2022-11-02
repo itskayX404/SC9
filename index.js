@@ -157,9 +157,9 @@ async function startxavior() {
                 }
 
                 if (anu.action == 'add') {
-                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}` })
+                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `Hai kak👋 @${num.split("@")[0]} selamat datang di ${metadata.subject}\n • intro dulu yuk:\n - Nama:\n - Umur:\n - Askot:\n Semoga betah 👋` })
                 } else if (anu.action == 'remove') {
-                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split("@")[0]} Leaving To ${metadata.subject} jangan balik lagi ya nyet` })
+                    xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split("@")[0]} Selamat tinggal beban👋 ${metadata.subject} ` })
                 } else if (anu.action == 'promote') {
                     xavior.sendMessage(anu.id, { image: { url: ppuser }, mentions: [num], caption: `@${num.split('@')[0]} Promote From ${metadata.subject}` })
                 } else if (anu.action == 'demote') {
