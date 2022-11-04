@@ -1615,34 +1615,6 @@ break
             }
             break
            
-           case 'tutor': {
-           let yts = require("yt-search")
-                let search = await yts('https://youtu.be/yZ1TEsTeE_k')
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-                let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '♫ Audio'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '► Video'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: anu.thumbnail },
-                    caption: `
-⭔ *Title* : Tutor Buat Bot Seperti Di Gc 🗿
-⭔ *No Wa*: 081511480762
-⭔ *Duration* : 24Hours
-⭔ *Viewers* : 14M views
-⭔ *Upload* At : 1 years ago
-⭔ *Author* : MBY•OFFICIAL 
-⭔ *Channel* : ${anu.author.url}
-⭔ *Description* : Gak Subrek Bot Mati!
-⭔ *Url* : ${anu.url}`,
-                    footer: global.author,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                xavior.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
-           
 	    case 'ytmp3': case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
                 if (!text) throw `Contoh : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`
@@ -3261,22 +3233,12 @@ Havy-bot
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: 'wa.me/6282180026483'
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    id: 'owner'
                                 }
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Donasi☕︎',
                                     id: 'donasi'
-                                }  
-                            }, {
-                                quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3323,17 +3285,17 @@ Havy-bot
                  let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    id: 'owner'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3342,8 +3304,8 @@ Havy-bot
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'webzone menu',
+                                    id: 'webzone'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3378,17 +3340,17 @@ case 'webzone': {
                  let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    id: 'owner'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3397,8 +3359,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Downloader menu',
+                                    id: 'download'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3439,17 +3401,17 @@ case 'webzone': {
                  let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    id: 'owner'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: '✰➪link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3458,8 +3420,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Search menu',
+                                    id: 'search'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
