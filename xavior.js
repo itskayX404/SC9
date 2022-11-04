@@ -536,9 +536,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
   goblok = fs.readFileSync('./video/ga.jpg')
                 xavior.sendMessage(m.chat, { image: goblok, caption: `┌──⭓ *Sewa Bot*
 
-│⭔ 1 Minggu :10k
-│⭔ 1 Bulan :15k
-│⭔ Permanen :20k
+│⭔ 1 Minggu :5
+│⭔ 1 Bulan :10k
+│⭔ Permanen :15k
+│⭔ Premium : 10k/bulan
+│⭔ Hub owner dengan cara ketik owner ke bot!
 └───────⭓` }, { quoted: m })
             }
           
@@ -2921,48 +2923,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
             case 'okay': { m.reply('Subrek lah Yt MBY•OFFICIAL')} break
             
-             case 'menu': {
-            anu = `── *Welcome* ──
-Hai Saya Bot Wa
-Siap Melayani Anda
-Ketik (.menu) Untuk Mengakses
-Mau Script? Bisa Chat Owner
-Thanks Sudah Menggunakan
-AzzBot-MD Jangan Lupa Subscribe
-Chanel : https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g
-Nih Musik Buat Menghibur
-───────⭓`
-            let btn = [{
-                                
-                                quickReplyButton: {
-                                    displayText: '✰➪Daftar Fitur',
-                                    id: 'command'
-                            }    }, {quickReplyButton: {
-                                    displayText: 'Thanks👌',
-                                    id: 'okay'}
-                                                                          
-                            }]
-                         let setbot = db.data.settings[botNumber]
-                        if (setbot.templateImage) {
-                        xavior.send5ButImg(m.chat, anu, global.author, global.thumb, btn, global.thumb)
-                        } else if (setbot.templateGif) {
-                        xavior.send5ButGif(m.chat, anu, global.author, global.kontolgeming, btn, global.thumb)
-                        } else if (setbot.templateVid) {
-                        xavior.send5ButVid(m.chat, anu, global.author, global.kontolgeming, btn, global.thumb)
-                        } else if (setbot.templateMsg) {
-                        xavior.send5ButMsg(m.chat, anu, global.author, btn)
-                        } else if (setbot.templateLocation) {
-                        xavior.send5ButLoc(m.chat, anu, global.author, global.thumb, btn)
-                        } tutor = fs.readFileSync('./tutor/selamatdatang.mp3')
-                        xavior.sendMessage(m.chat, {audio: tutor, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
-                        }
-break       
-     
- case 'allmenu': {
+ case 'menu': {
                 anu = `
 
-┌──⭓ *𝘈𝘻𝘻𝘉𝘰𝘵•𝘔𝘋*
-│⭔ 𝘖𝘸𝘯𝘦𝘳:𝗬𝗮𝗵𝘆𝗮 
+┌──⭓ *Havy-Bot*
+│⭔ 𝘖𝘸𝘯𝘦𝘳:Kay 
 │⭔ 𝘝𝘦𝘳𝘴𝘪𝘰𝘯: 4.0
 │⭔ 𝘙𝘶𝘯𝘝𝘪𝘢:𝘏𝘦𝘳𝘰𝘬𝘶
 └───────⭓
@@ -3286,17 +3251,17 @@ break
 │
 └───────⭓
 
-𝐀𝐳𝐳𝐁𝐨𝐭•𝐌𝐃
-𝐁𝐲:𝐘𝐚𝐡𝐲𝐚𝐆𝐚𝐧𝐳𝐳|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
+Havy-bot
+𝐁𝐲:itskayx404|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
                  let btn = [{
                                 urlButton: {
                                     displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    url: 'wa.me/6282180026483'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    phoneNumber: 'wa.me/6282180026483'
                                 }
                             }, {
                                 quickReplyButton: {
