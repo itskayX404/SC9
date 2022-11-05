@@ -3229,7 +3229,7 @@ Havy-bot
                  let btn = [{
                                 urlButton: {
                                     displayText: 'Buy Premium',
-                                    Url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
