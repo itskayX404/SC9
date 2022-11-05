@@ -28,7 +28,7 @@ global.mess = {
     private: 'Fitur Digunakan Hanya Untuk Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
     wait: 'Loading...',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
+    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12\n Jika ingin Limit Unlimited/tidak terbatas bisa membeli premium dengan harga 10k/bulan',
 }
 global.limitawal = {
     premium: "Infinity",
