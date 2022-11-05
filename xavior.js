@@ -543,6 +543,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 │⭔ Hub owner dengan cara ketik owner ke bot!
 └───────⭓` }, { quoted: m })
             }
+break
           
 case 'runtime': { m.reply('4 days, 9 hours, 26 minutes')}
           break
