@@ -1225,13 +1225,13 @@ break
                     await sleep(1500)
                     let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
-                                callButton: {
+                                quickReplyButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    id: 'owner'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1246,7 +1246,7 @@ break
                             }, {
                                 quickReplyButton: {
                                     displayText: 'Script',
-                                    id: 'noenc'
+                                    id: 'kevo'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
@@ -3227,11 +3227,11 @@ Havy-bot
 𝐁𝐲:itskayx404|𝘷𝘦𝘳𝘴𝘪𝘰𝘯 4.0`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'wa.me/6282180026483'
+                                    displayText: 'Buy Premium',
+                                    Url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
-                                callButton: {
+                                quickReplyButton: {
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }
@@ -3284,11 +3284,11 @@ Havy-bot
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'wa.me/6282180026483'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
-                                callButton: {
+                                quickReplyButton: {
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }
@@ -3339,11 +3339,11 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'wa.me/6282180026483'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
-                                callButton: {
+                                quickReplyButton: {
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }
@@ -3400,11 +3400,11 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'wa.me/6282180026483'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
-                                callButton: {
+                                quickReplyButton: {
                                     displayText: 'Contact Owner',
                                     id: 'owner'
                                 }
@@ -3456,18 +3456,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3476,8 +3476,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Random menu',
+                                    id: 'random'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3520,18 +3520,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3540,8 +3540,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Text Pro Menu',
+                                    id: 'textpro'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3598,18 +3598,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3618,8 +3618,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Photo OXY Menu',
+                                    id: 'photoxy'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3657,18 +3657,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3677,8 +3677,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Ephoto Menu',
+                                    id: 'ephoto'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3713,18 +3713,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3733,8 +3733,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Fun Menu',
+                                    id: 'fun'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3774,18 +3774,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3794,8 +3794,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Primbon Menu',
+                                    id: 'dukun'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3851,18 +3851,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3871,8 +3871,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Convert Menu',
+                                    id: 'convert'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3916,18 +3916,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3936,8 +3936,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Main Menu',
+                                    id: 'main'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -3973,18 +3973,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3993,8 +3993,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Database Menu',
+                                    id: 'database'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -4028,18 +4028,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4048,8 +4048,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Islam Menu',
+                                    id: 'islam'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -4129,18 +4129,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4149,8 +4149,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Voice Changer',
+                                    id: 'vn'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -4187,18 +4187,18 @@ case 'webzone': {
 └───────⭓`
                  let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4207,8 +4207,8 @@ case 'webzone': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                    displayText: 'Owner Menu',
+                                    id: 'menuowner'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
@@ -4248,18 +4248,18 @@ case 'webzone': {
 └───────⭓`
                 let btn = [{
                                 urlButton: {
-                                    displayText: 'Script',
-                                    url: 'https://youtube.com/channel/UCmUhiytK9WMYaOFgdOho_2g'
-                                }
-                            }, {
-                                callButton: {
-                                    displayText: 'Contact Owner',
-                                    phoneNumber: '+62 815-1148-0762'
+                                    displayText: 'Buy Premium',
+                                    url: 'http://api.whatsapp.com/send?phone=6282180026483&text=misi%20kak%20saya%20mau%20beli%20premium%20bot'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '✰➪Tutor',
-                                    id: 'tutor'
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: '✰➪Link Gc',
+                                    id: 'linkgroup'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -4267,9 +4267,9 @@ case 'webzone': {
                                     id: 'donasi'
                                 }  
                             }, {
-                                quickReplyButton: {
-                                    displayText: 'Like👍..',
-                                    id: 'subscribe'
+                                urlButton: {
+                                    displayText: 'Github',
+                                    url: 'https://github.com/itskayx404'
                                 }
                             }]
                          let setbot = db.data.settings[botNumber]
